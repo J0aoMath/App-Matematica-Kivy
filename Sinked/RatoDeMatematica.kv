@@ -1,0 +1,70 @@
+Main:
+
+
+<FormarGrades>:
+
+
+<ReturnButton>:
+
+<TelaInicial>:
+    canvas:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            size: self.size
+        Color:
+            rgb: 0, 0, 0
+        Line:
+            rectangle: (self.width*0.05,self.height*0.05,self.width*0.9,self.height*0.9)
+            width: 1.5
+        Line:
+            rectangle: (self.width*0.0625,self.height*0.06,self.width*0.875,self.height*0.88)
+            width: 1
+    anchor_x: 'center'
+    anchor_y: 'center'
+    BoxLayout:
+        size_hint: .64, .64
+        orientation: "vertical"
+        Label:            
+            text: "Rato de Matematica"
+            font_size: "30dp"
+            color: .75, 0, 0
+        Button:
+            text: "Operações Fundamentais"
+            size_hint: 1, .5
+            on_press: root.on_press_operacoes_fundamentais()
+        Button:
+            text: "Equações do Primeiro Grau"
+            size_hint: 1, .5
+            on_press: root.on_press_equacoes_primeiro_grau()
+        Button: 
+            text: "Estatísticas"
+            size_hint: 1, .5
+            on_press: root.on_press_estatisticas()
+        Button:
+            text: "Instruções"
+            size_hint: 1, .5
+            on_press: root.on_press_instrucoes()
+        Button:
+            text: "Opções"
+            size_hint: 1, .5
+            on_press: root.on_press_opcoes()
+
+<MenuConta>:
+    
+    canvas:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            size: self.size
+        Color:
+            rgb: 0, 0, 0
+        Line:
+            rectangle: (self.width*0.05,self.height*0.05,self.width*0.9,self.height*0.9)
+            width: 1.5
+        Line:
+            rectangle: (self.width*0.0625,self.height*0.06,self.width*0.875,self.height*0.88)
+            width: 1
+    anchor_x: 'center'
+    anchor_y: 'center'
+    
